@@ -1,0 +1,21 @@
+{
+  "name": "cfe-education-platform",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "amplify"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "lint": "npm run lint --workspace=frontend",
+    "typecheck": "npm run typecheck --workspace=frontend",
+    "test": "npm run test --workspace=frontend",
+    "test:e2e": "npm run test:e2e --workspace=frontend",
+    "sandbox": "npm run sandbox --workspace=amplify"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
