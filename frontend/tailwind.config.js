@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
@@ -31,7 +30,6 @@ const config: Config = {
           500: "#f59e0b",
           700: "#b45309",
         },
-        // Avoid red "failure" language for children
         support: {
           50: "#fff7ed",
           500: "#f97316",
@@ -43,7 +41,6 @@ const config: Config = {
         "2xl": "1.5rem",
         "3xl": "2rem",
       },
-      // Minimum touch target 44px for children
       minHeight: {
         touch: "44px",
       },
@@ -54,5 +51,3 @@ const config: Config = {
   },
   plugins: [],
 };
-
-export default config;

@@ -18,13 +18,6 @@ export const auth = defineAuth({
     email: true,
   },
   groups: ["parent", "child", "content_author", "reviewer", "admin"],
-  passwordPolicy: {
-    minLength: 8,
-    requireLowercase: true,
-    requireUppercase: true,
-    requireNumbers: true,
-    requireSymbols: false,
-  },
   accountRecovery: "EMAIL_ONLY",
   userAttributes: {
     preferredUsername: {
